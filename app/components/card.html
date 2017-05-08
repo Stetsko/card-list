@@ -1,0 +1,43 @@
+	<section 
+	class="wrapper-card-edit"
+	ng-controller ="listCtrl as lsitCtrl">
+
+	<div class="card-edit"
+			ng-controller ="cardCtrl as cardCtrl">
+
+<div ng-if = "!isEditing">
+			<div class="card-field">
+				<span>front</span>
+				<div ng-click ="editCard(card)" class="card-front">{{card.front}}</div>
+			</div><!-- /.card-field -->
+
+			<div class="card-field">
+				<span>back</span>
+				<div ng-click ="editCard(card)" class="card-back">{{card.back}}</div>
+			</div><!-- /.card-field -->
+</div><!-- ng-if -->
+
+<div ng-if = "isEditing">
+	<form ng-submit="updateCard(card)">
+
+		<div class="card-field">
+			<span>front</span>
+			<input type="text" ng-model="editingCard.front" required>
+		</div><!-- /.card-field -->
+
+		<div class="card-field">
+			<span>back</span>
+			<input type="text" ng-model="editingCard.back" required>
+		</div><!-- /.card-field -->
+
+	</form>
+</div><!-- ng-if -->
+
+
+		<div class="buttons" >
+			<button ng-click ="updateCard(card)" class="update">{{btnValUpdate}}</button>
+			<button  ng-click ="deleteCard(card)" class="delete">{{btnValDel}}</button>
+		</div>
+
+	</div><!-- /.card-edit -->
+</section>

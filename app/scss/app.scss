@@ -1,0 +1,131 @@
+@import "adjustment/normalize";
+
+a{
+	text-decoration: none;
+}
+
+.wrapper{
+	padding: 0;
+	position: relative;
+	max-width: 780px;
+	min-width: 320px;
+	margin-top: 38px;
+	border-top: 1px solid #f1f1f1;
+}
+.def{
+	h2{
+		text-align: center;
+	}
+}
+.wrapper-card-edit{
+	padding: 0;
+	max-width: 780px;
+	min-width: 320px;
+	margin-top: 20px;
+}
+
+.card{
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #f1f1f1;
+	position: relative;
+}
+.front{
+	color: #141414;
+	font-size: 16px
+}
+.back{
+	font-size: 12px;
+	color: #969696;
+}
+.arrow{
+	width: 9px;
+	height: 16px;
+	display: block;
+	background-image: url(../img/arrow.png);
+	position: absolute;
+	right: 15px;
+	top: 23px;
+}
+
+.add-new-card{
+	width: 16px;
+	height: 16px;
+	display: block;
+	background-image: url(../img/plus-small.png);
+	position: absolute;
+	cursor: pointer;
+	top: -28px;
+	right: 18px;
+}
+
+
+.card-field{
+	margin-bottom: 30px;
+	span{
+		display: block;
+		font-size: 12px;
+		padding-left: 10px;
+		color: #969696;
+	}
+	.card-front, .card-back, input[type="text"]{
+		display: block;
+		width: 280px;
+		border: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+
+.card-edit{
+	::-webkit-input-placeholder{
+		color: #141414;
+		opacity: 1;
+	}
+	:-moz-placeholder{
+		color: #141414;
+		opacity: 1;
+	}
+	::-moz-placeholder{
+		color: #141414;
+		opacity: 1;
+	}
+	:-ms-input-placeholder{
+		color: #141414;
+		opacity: 1;
+	}
+
+.buttons{
+	padding-right: 10px;
+	padding-left: 10px;
+	button{
+	width: 100%;
+	padding-top: 10px;
+	border: 0;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+	cursor: pointer;
+
+}
+.update, .addNewCard{
+background: #0084F0;
+color: #fff;
+}
+.delete{
+	border: 1px solid #C94E37;
+	background-color: transparent;
+	color: #C94E37;
+}
+}
+
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+}

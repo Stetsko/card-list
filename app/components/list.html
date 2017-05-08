@@ -1,0 +1,22 @@
+	<section	class="wrapper"
+						ng-controller ="listsCtrl as listsCtrl">
+						<div ng-controller ="addCardCtrl as addCardCtrl">
+							<div ng-click="addCard()" class="add-new-card"></div>
+						</div>
+
+<div ng-if='!isDefault'>
+						<div	class="card"
+									ng-repeat="list in lists">
+						<a href="/card/{{list.id}}">
+							<div class="front">{{ list.front | limitTo: 20}}{{list.front.length > 20 ? ' ...' : ''}}</div>
+							<div class="back">{{ list.back | limitTo: 30}}{{list.back.length > 30 ? ' ...' : ''}}</div>
+							<a href="#" class="arrow"></a>
+						</a>
+					</div><!-- /.card -->
+</div><!-- ng-if -->
+
+<div ng-if='isDefault' class="def">
+<h2>You don't have any cards</h2>
+</div><!-- ng-if -->
+
+</section>

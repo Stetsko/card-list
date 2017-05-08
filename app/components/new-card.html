@@ -1,0 +1,22 @@
+	<section
+	class="wrapper-card-edit"
+	ng-controller ="listsCtrl as lsitsCtrl">
+
+	<div class="card-edit"
+			 ng-controller = "addCardCtrl as addCardCtrl">
+			<form ng-submit="addNewCard()">
+			<div class="card-field">
+				<span>front</span>
+				<input type="text" ng-model = "newFront" placeholder="Enter the text for a new card" required>
+			</div><!-- /.card-field -->
+				
+			<div class="card-field">
+				<span>back</span>
+				<input type="text" ng-model = "newBack"  placeholder="Enter the text for a new card" required>
+			</div><!-- /.card-field -->
+		</form>
+		<div class="buttons" >
+			<button ng-click ="addNewCard()" class="addNewCard">{{addCardNew}}</button>
+		</div>
+	</div><!-- /.card-edit -->
+</section>
